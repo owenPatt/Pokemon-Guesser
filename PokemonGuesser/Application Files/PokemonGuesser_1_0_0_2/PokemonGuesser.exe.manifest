@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="PokemonGuesser.exe" version="1.0.0.2" publicKeyToken="3c6ca1e92c3b588f" language="neutral" processorArchitecture="amd64" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="PokemonGuesser" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+    <commandLine file="PokemonGuesser.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PokemonGuesser.exe" size="2622400">
+      <assemblyIdentity name="PokemonGuesser" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Y+gRGguYAn8feSK6Vu+6hJlW2lwTPwLYqNrFdw7t/ns=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VideoControl.dll" size="8704">
+      <assemblyIdentity name="VideoControl" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>krMwC+wU8+RoNP+Wiu0cRfbGSDD7hZli/F0uWIRerqY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Pokedex.accdb" size="786432">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aixy8gF453jeyo8xqVrygbLxf2OARc5oI9ymq5QooCU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="PokemonGuesser.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=OWENDEVICE\owenp" issuerKeyHash="13e56dbda181edacfb20022a284804d5112d28c8" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>OCe9ND5typBlfpV1R+31JL0I9G+zBvq6s/q0JGn2bl0=</DigestValue></Reference></SignedInfo><SignatureValue>hzCmi6qF/53WR8GMVjywoobTykMFkg5XssV5eJZrjr5Vpxg5M9J9Vgrhw4am8ooSbmDT81qOZK/jNvwLaSlmtBKb2goO4kc6rwWDQwA8gHKlR7o7yru22jHx/KOCf38V0s0VNo96oXqbJ8dgCQHN7uezim5LCHgx2DSWbXzd4EU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>sOO4hMrgm16qGhE98p1SGofaZm64CQuHefkBgINCI7of8jU2v3NBBfWfVxAc8tvtaDqdyBF+d2Ajcr0ERjMcpxwz1EqJ59GMEfu3i6Vs7MqcRqJyyUEYw7A0/cIFMRqXRpa1MLomFcAj1LF8GZc7DDxRJ3nXTDT4WLwoY+GQ+E0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="5d6ef66924b4fab3bafa06b36ff408bd24f5ed4775957e6590ca6d3e34bd2738" Description="" Url=""><as:assemblyIdentity name="PokemonGuesser.exe" version="1.0.0.2" publicKeyToken="3c6ca1e92c3b588f" language="neutral" processorArchitecture="amd64" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=OWENDEVICE\owenp</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>yCjbiQ5Rzv9UgNmhVyUNrOuixtEZpbqm76DqsazE8Cg=</DigestValue></Reference></SignedInfo><SignatureValue>F2iM+fjJ0eS4tETrz7Hl5N39zguujImwFsxAghRKQhXySKoKBoSBB6uJ+rgkTsjwm7wixbqfy8ssxAti/zEoZ+Q2xNYlJUeMDHeasq2rTZmZfg5ZC48eDdxdhRE82S+226CbgwOm9qqAZqVCmNE6jXWOLAR+YsnJQWqZTr79Ads=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sOO4hMrgm16qGhE98p1SGofaZm64CQuHefkBgINCI7of8jU2v3NBBfWfVxAc8tvtaDqdyBF+d2Ajcr0ERjMcpxwz1EqJ59GMEfu3i6Vs7MqcRqJyyUEYw7A0/cIFMRqXRpa1MLomFcAj1LF8GZc7DDxRJ3nXTDT4WLwoY+GQ+E0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQEinLnx6BGJFALh5xlZ9TbjANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAATwBXAEUATgBEAEUAVgBJAEMARQBcAG8AdwBlAG4AcDAeFw0yNTA0MTYxODA4MjBaFw0yNjA0MTcwMDA4MjBaMCsxKTAnBgNVBAMeIABPAFcARQBOAEQARQBWAEkAQwBFAFwAbwB3AGUAbgBwMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCw47iEyuCbXqoaET3ynVIah9pmbrgJC4d5+QGAg0Ijuh/yNTa/c0EF9Z9XEBzy2+1oOp3IEX53YCNyvQRGMxynHDPUSonn0YwR+7eLpWzsypxGonLJQRjDsDT9wgUxGpdGlrUwuiYVwCPUsXwZlzsMPFEneddMNPhYvChj4ZD4TQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAGyOXN68i2pIZrYmW5DjxGUfHhkyalH1bT0NVP6HH6guSu1cjclkH7ixDIoDFSHZPkyw8X7APFrid56Z/OczvFEd7q21jZ5uKohH6o/U8ZNoVupRciMVu5FMhKPcIqF67PNY70umV+6wFV3AxbkHr4xK5fg2zeF6hPphB7D8JzuD</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
